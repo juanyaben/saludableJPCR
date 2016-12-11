@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.utn.modelo.Comida" table="comida" catalog="saludable">
+		<id name="comidaId" type="java.lang.Integer">
+			<column name="comidaId" />
+			<generator class="identity" />
+		</id>
+		<property name="tipoComida" type="String">
+			<column name="tipoComida" length="50" not-null="false" />
+		</property>
+		<property name="comidaPrincipal" type="String">
+			<column name="comidaPrincipal" length="50" not-null="false" />
+		</property>
+		<property name="comidaSecundaria" type="String">
+			<column name="comidaSecundaria" length="50" not-null="false" />
+		</property>
+		<property name="bebida" type="String">
+			<column name="bebida" length="50" not-null="false" />
+		</property>
+		<property name="postre" type="String">
+			<column name="postre" length="50" not-null="false" />
+		</property>
+		<property name="alimentoExtra" type="String">
+			<column name="alimentoExtra" length="50" not-null="false" />
+		</property>
+		<property name="hambreExtra" type="String">
+			<column name="hambreExtra" length="50" not-null="false" />
+		</property>
+	
+		<property name="fechaComida" type="java.util.Date">
+			<column name="fechaComida" length="11" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

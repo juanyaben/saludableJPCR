@@ -1,0 +1,8 @@
+com\utn\controlador\PersonaController.class
+com\utn\controlador\ErrorController.class
+com\utn\controlador\AutoController.class
+com\utn\modelo\Motor.class
+com\utn\modelo\Auto.class
+com\utn\dao\HibernateUtil.class
+com\utn\modelo\Persona.class
+com\utn\dao\HibernateUtils.class

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.utn.modelo.Auto" table="auto" catalog="utnweb">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+		<property name="marca" type="String">
+			<column name="marca" length="10" not-null="false" />
+		</property>
+		<property name="modelo" type="String">
+			<column name="modelo" length="10" not-null="false" />
+		</property>
+		<property name="patente" type="String">
+			<column name="patente" length="11" not-null="false" />
+		</property>
+		<property name="color" type="String">
+			<column name="color" length="11" not-null="false" />
+		</property>
+		<property name="precio" type="String">
+			<column name="precio" length="11" not-null="false" />
+		</property>
+		<property name="estado" type="String">
+			<column name="estado" length="11" not-null="false" />
+		</property>
+		
+		<property name="fechafabri" type="java.util.Date">
+			<column name="fechafabri" length="11" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>
